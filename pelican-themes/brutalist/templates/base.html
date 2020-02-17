@@ -75,13 +75,13 @@
     <div role="banner" id="masthead">
         <header>
             {% if GRAVATAR %}
-            <a href="/"><img src="{{ GRAVATAR }}" alt="Matt McManus Avatar" class="gravatar"></a>
+            <a href="{{ SITEURL }}"><img src="{{ GRAVATAR }}" alt="Wojtek" class="gravatar"></a>
             {% elif LOGO %}
             <a href="/"><img src="{{ SITEURL }}/images/{{ LOGO }}" alt="McManus Logo"></a>
             {% else %}
             <h1><a href="/">{{ FIRST_NAME }}'s Blog</a></h1>
             {% endif %}
-            <a href="#menu" id="menu-link">more stuff</a>
+            <a href="#menu" id="menu-link">Menu</a>
             <nav id="menu">
                 <ul>
                     {% if DISPLAY_PAGES_ON_MENU %}
@@ -105,6 +105,8 @@
     </div>
     {% endblock header %}
         <div class="page" role="main">
+            <div><h1>{{ SITEDESCRIPTION }}</h1></div>
+            <br>
             {% block content %}
             {% endblock content %}
             {% block footer %}

@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Wojtek Cichon'
 SITENAME = 'Six Million Ways to DIY'
-SITESUBTITLE = "thoughts on software, DIY culture, anything really"
+SITESUBTITLE = 'thoughts on software, DIY culture, anything really'
 SITEURL = 'https://wojtekidd.org/6mlndiy'
 PATH = 'content'
 TIMEZONE = 'Europe/Warsaw'
@@ -27,7 +27,7 @@ SOCIAL = ()
 
 DEFAULT_PAGINATION = 3
 USE_FOLDER_AS_CATEGORY = True
-DEFAULT_CATEGORY = 'Blog'
+DEFAULT_CATEGORY = 'blog'
 DISPLAY_CATEGORIES_ON_MENU = True
 
 
@@ -37,7 +37,7 @@ RELATIVE_URLS = False
 STATIC_PATHS = ['images', 'pages']
 
 # Specify name of a theme installed via the pelican-themes tool
-THEME = "brutalist"
+THEME = 'pelican-themes/brutalist'
 ## used for OG tags and Twitter Card data on index page
 # SITEIMAGE = 'site-cover.jpg'
 ## used for OG tags and Twitter Card data of index page
