@@ -49,6 +49,8 @@ One would go mad if she'd only listen to one LP in circles. That's where variety
 
 My **"4 this week"** system is [a Spotify playlist](https://open.spotify.com/playlist/0XE4lcWziEGO6K8V8rnH3a) that I create every Saturday and listen on repeat for the upcoming week.
 
+<iframe src="https://open.spotify.com/embed/playlist/0XE4lcWziEGO6K8V8rnH3a" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
 My rules are:
 
  - I listen to four albums per week - one LP from every 4 genres I’m fond of:
