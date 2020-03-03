@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Six Million Ways to DIY</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8" />
+        <!-- twitter card metadata -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s.gravatar.com/avatar/f3365ae331876cd8553167f3354d06ba?s=256">
+<meta name="twitter:site" content="@wojtekidd">
+<meta name="twitter:title" content="CLI tools for noobs and non-devs - improve your shell experience, promptly.">
+<meta name="twitter:description" content="">
+        <!-- OG Tags -->
+<meta property="og:url" content="https://wojtekidd.org/6mlndiy/cli-tools-for-noob-non-devs.html"/>
+<meta property="og:title" content="Six Million Ways to DIY | CLI tools for noobs and non-devs - improve your shell experience, promptly." />
+<meta property="og:description" content="" />
+        <!-- favicon -->
+        <!-- moment.js for date formatting -->
+        <script src="https://wojtekidd.org/6mlndiy/theme/js/moment.js"></script>
+        <!-- css -->
+        <link rel="stylesheet" type="text/css" href="https://wojtekidd.org/6mlndiy/theme/css/main.css" />
+		<script>
+			
+                /*! grunt-grunticon Stylesheet Loader - v2.1.2 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
+    
+    (function(e){function t(t,n,r,o){"use strict";function a(){for(var e,n=0;u.length>n;n++)u[n].href&&u[n].href.indexOf(t)>-1&&(e=!0);e?i.media=r||"all":setTimeout(a)}var i=e.document.createElement("link"),l=n||e.document.getElementsByTagName("script")[0],u=e.document.styleSheets;return i.rel="stylesheet",i.href=t,i.media="only x",i.onload=o||null,l.parentNode.insertBefore(i,l),a(),i}var n=function(r,o){"use strict";if(r&&3===r.length){var a=e.navigator,i=e.Image,l=!(!document.createElementNS||!document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||e.opera&&-1===a.userAgent.indexOf("Chrome")||-1!==a.userAgent.indexOf("Series40")),u=new i;u.onerror=function(){n.method="png",n.href=r[2],t(r[2])},u.onload=function(){var e=1===u.width&&1===u.height,a=r[e&&l?0:e?1:2];n.method=e&&l?"svg":e?"datapng":"png",n.href=a,t(a,null,null,o)},u.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",document.documentElement.className+=" grunticon"}};n.loadCSS=t,e.grunticon=n})(this);(function(e,t){"use strict";var n=t.document,r="grunticon:",o=function(e){if(n.attachEvent?"complete"===n.readyState:"loading"!==n.readyState)e();else{var t=!1;n.addEventListener("readystatechange",function(){t||(t=!0,e())},!1)}},a=function(e){return t.document.querySelector('link[href$="'+e+'"]')},c=function(e){var t,n,o,a,c,i,u={};if(t=e.sheet,!t)return u;n=t.cssRules?t.cssRules:t.rules;for(var l=0;n.length>l;l++)o=n[l].cssText,a=r+n[l].selectorText,c=o.split(");")[0].match(/US\-ASCII\,([^"']+)/),c&&c[1]&&(i=decodeURIComponent(c[1]),u[a]=i);return u},i=function(e){var t,o,a;o="data-grunticon-embed";for(var c in e)if(a=c.slice(r.length),t=n.querySelectorAll(a+"["+o+"]"),t.length)for(var i=0;t.length>i;i++)t[i].innerHTML=e[c],t[i].style.backgroundImage="none",t[i].removeAttribute(o);return t},u=function(t){"svg"===e.method&&o(function(){i(c(a(e.href))),"function"==typeof t&&t()})};e.embedIcons=i,e.getCSS=a,e.getIcons=c,e.ready=o,e.svgLoadedCallback=u,e.embedSVG=u})(grunticon,this);
+                
+                grunticon(["https://wojtekidd.org/6mlndiy/theme/css/icons.data.svg.css", "https://wojtekidd.org/6mlndiy/theme/css/icons.data.png.css", "https://wojtekidd.org/6mlndiy/theme/css/icons.fallback.css"]);
+            </script>
+        <noscript><link href="https://wojtekidd.org/6mlndiy/theme/css/icons.fallback.css" rel="stylesheet"></noscript>
+        <!-- menu toggle javascript -->
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", initMenu);
+            
+            function initMenu(){
+                var menu = document.getElementById("menu");
+                var menulink = document.getElementById("menu-link");
+                menulink.addEventListener("click", function toggleMenu(){
+                        window.event.preventDefault();
+                        menulink.classList.toggle('active');
+                        menu.classList.toggle('active');              
+                    });
+            };
+        </script>
+
+
+    <meta name="tags" content="cli" />
+    <meta name="tags" content="shell" />
+    <meta name="tags" content="tooling" />
+
+</head>
+<body>
+    <div role="banner" id="masthead">
+        <header>
+            <a href="https://wojtekidd.org/6mlndiy"><img src="https://s.gravatar.com/avatar/f3365ae331876cd8553167f3354d06ba?s=256" alt="Wojtek" class="gravatar"></a>
+            <a href="#menu" id="menu-link">Menu</a>
+            <nav id="menu">
+                <ul>
+                        <li><a href="https://wojtekidd.org/6mlndiy/pages/about.html">about</a></li>
+                            <li class="active"><a href="https://wojtekidd.org/6mlndiy/category/blog.html">blog</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+        <div class="page" role="main">
+            <div><h1>Six Million Ways to DIY - thoughts on software, DIY culture, anything really</h1></div>
+            <br>
+  <div class="article" role="article">
+    <article>
+        <footer>
+            <a name="top"></a>
+            <p>
+              <time datetime=" 2020-03-03 22:59:00+01:00">
+                <script>document.write(moment('2020-03-03 22:59:00+01:00').format('LL'));</script>
+              </time>
+            </p>
+        </footer>
+        <header>
+          <h2>
+            CLI tools for noobs and non-devs - improve your shell experience, promptly.
+          </h2>
+        </header>
+      <div class="content">
+         <p><img alt="Picture of shell" src="https://wojtekidd.org/6mlndiy/images/shell-by-pankaj-patel.jpg" title="Terminal shell"></p>
+<p>I noticed that people learning to code and non-developers have generally a hard time approaching their operating systems’ shells. No wonder - we’ve got so accustomed to graphic user interfaces that asking your operating system to do things by writing some abstract commands feels pretty awkward to most of us.</p>
+<p>When starting to code, or working with software developers sooner than later you’ll have to bang your head against the keyboard press enter and see what happens. I want to show you some cool CLI tools I found that will enable you to get accustomed to using your shell and enjoying it!</p>
+<h2>Shell 101</h2>
+<p>First things first.</p>
+<p>"In computing, a <strong>shell</strong> is a user interface for access to an <strong>operating system</strong>'s services. In general, <strong>operating system shells</strong> use either a command-line interface (CLI) or graphical user interface (GUI), depending on a computer's role and particular operation. A <strong>command-line interface</strong> (<strong>CLI</strong>) is a text-based user interface (UI) used to view and manage computer files."</p>
+<p>My first contact with Linux shell was somewhere around the year 2000. Back then, I was what people call now a script kiddie - subscribing Bugtraq, installing Red Hat, tweaking Enlightenment, learning HTML with C++ and thinking how I can put these two together.</p>
+<p>I’ve got introduced to CLI in high school and since then I feel paranoid when I’m not able to access shell on my laptop or workstation.</p>
+<h2>CLI tools I find useful</h2>
+<p>Here are some CLI tools that make working with shell less hell.  </p>
+<h3>fish</h3>
+<p><a href="https://fishshell.com/">Fish</a> stands for <strong>f</strong>riendly <strong>i</strong>nteractive <strong>sh</strong>ell. It’s full of colors, helpful autosuggestions and works across all platforms (macOS, Linux, Windows).</p>
+<p>It’s very friendly for users who just started working with CLI. See what happens when I put <code>git</code> and just press <code>[TAB]</code> a couple of times:</p>
+<p>[IMAGE]</p>
+<p><strong>Note:</strong> with fish things might get a bit out of hand when you want to set up your programming environment. I had to google things and work it out when it came to managing the <code>PATH</code> variable on some occasions (<a href="https://angristan.xyz/2018/07/how-to-use-nvm-rbenv-pyenv-goenv-with-fish-shell/">here’s a post that saved my life when it came to setting up programming version managers in fish</a></p>
+<p>Anyway, fish is “smart and user-friendly” and I would highly recommend it to all you CLI n00bs!</p>
+<h3>bash-git-prompt</h3>
+<p>This <a href="[https://github.com/magicmonty/bash-git-prompt">“informative and fancy bash prompt for Git users”</a> is something I wouldn’t be able to live without right now. If you’re working a lot with <a href="https://en.wikipedia.org/wiki/Git">Git version-control system</a> then this is a must-have.</p>
+<p>Thanks to this little addition to my shell I know exactly what’s my current directories’ <code>git status</code> without having to execute this command every single time I push/pull/commit/add changes to my local repo.</p>
+<p><a href="https://github.com/magicmonty/bash-git-prompt#install-for-the-fish-shell">Works great with fish</a> 👍</p>
+<h3>The Fuck</h3>
+<p>Yes - that’s the name of the next CLI tool which I find very helpful. Described as a <a href="https://github.com/nvbn/thefuck">“magnificent app which corrects your previous console command”</a> it does exactly that.  </p>
+<p>With this app, swearing gives you twice the relief 😉</p>
+<h3>howdoi</h3>
+<p>I use this one less, but it’s sometimes very helpful on CLI-only systems where you can’t use a GUI web browser (remember that there are text-mode web browsers like <a href="https://lynx.browser.org/">Lynx</a> that  work perfectly fine 👌🏻). <a href="https://github.com/gleitz/howdoi">Howdoi</a> provides short programming-related snippets when you’re lost or you’re just looking for a quick answer on how to do something.</p>
+<h3>fkill</h3>
+<p>When using CLI you’re able to view all the processes that your computer is currently running by using a <code>ps</code> command. There are moments when you want to kill a process or two to unfreeze your machine. What <a href="https://github.com/sindresorhus/fkill-cli">fkill</a> does is support you with a nice CLI interface to do that instead of making you <code>grep</code> through a list of processes and <code>kill</code> them one by one.</p>
+<h2>Let’s be <code>less</code> afraid, shell we?</h2>
+<p>I hope these tools will make your CLI experience less cumbersome and invite you to use shell a bit more often. For more great CLI tools you can always <a href="https://github.com/agarrharr/awesome-cli-apps">check out this awesome CLI apps list on GitHub</a>).</p>
+<p>Next thing you know, you’ll be contributing to the ‘GUI vs CLI’ discourse on Twitter 😜</p>
+      </div>
+      <div class="back-to-top">
+          <a href="#top">back to top</a>
+      </div>
+    </article>
+  </div>
+<!-- end article -->
+                <footer>
+                    <div class="icons">
+                        <a href="https://twitter.com/wojtekidd" target="_blank"><div class="icon-twitter icon"></div></a>
+                        <a href="https://github.com/wojtekidd" target="_blank"><div class="icon-github icon"></div></a>
+                        <a href="https://www.goodreads.com/user/show/950927-wojtek" target="_blank"><div class="icon-goodreads icon"></div></a>
+                    </div>
+                    <p>© <script>document.write(moment().format('YYYY'));</script> Wojtek Cichon</p>
+ 
+                    <p><i>"Brutal"</i> Pelican Theme</p>
+                    <p>Designed and built by <a href="http://twitter.com/mcman_s">@mcman_s</a> in Denver</p>
+                </footer>
+        </div>
+</body>
+</html>
