@@ -35,7 +35,7 @@ It’s very friendly for users who just started working with CLI. See what happe
 
 ![Animated Fish gif]({static}/images/fishell.gif "Fish shell gif")
 
-**Note:** with fish things might get a bit out of hand when you want to set up your programming environment. I had to google things and work it out when it came to managing the `PATH` variable on some occasions ([here’s a post that saved my life when it came to setting up programming version managers in fish](https://angristan.xyz/2018/07/how-to-use-nvm-rbenv-pyenv-goenv-with-fish-shell/)
+**Note:** with fish things might get a bit out of hand when you want to set up your programming environment. I had to google things and work it out when it came to managing the `PATH` variable on some occasions ([here’s a post that saved my life when it came to setting up programming version managers in fish](https://angristan.xyz/2018/07/how-to-use-nvm-rbenv-pyenv-goenv-with-fish-shell/))
 
 Anyway, fish is “smart and user-friendly” and I would highly recommend it to all you CLI n00bs!
   
