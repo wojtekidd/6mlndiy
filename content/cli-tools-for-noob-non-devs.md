@@ -9,7 +9,9 @@ Summary: I want to show you some cool CLI tools I found that will enable you to 
 
 I noticed that people learning to code and non-developers have generally a hard time approaching their operating systems’ shells. No wonder - we’ve got so accustomed to graphic user interfaces that asking your operating system to do things by writing some abstract commands feels pretty awkward to most of us.
 
-When starting to code, or working with software developers sooner than later you’ll have to bang your head against the keyboard press enter and see what happens. I want to show you some cool CLI tools I found that will enable you to get accustomed to using your shell and enjoying it!
+When starting to code, or working with software developers sooner than later you’ll have to bang your head against the keyboard, press enter and see what happens. 
+
+I want to show you some cool CLI tools I found that will enable you to get accustomed to using your shell and enjoying it!
 
 ## Shell 101
 
@@ -17,7 +19,7 @@ First things first.
 
 "In computing, a **shell** is a user interface for access to an **operating system**'s services. In general, **operating system shells** use either a command-line interface (CLI) or graphical user interface (GUI), depending on a computer's role and particular operation. A **command-line interface** (**CLI**) is a text-based user interface (UI) used to view and manage computer files."
   
-My first contact with Linux shell was somewhere around the year 2000. Back then, I was what people call now a script kiddie - subscribing Bugtraq, installing Red Hat, tweaking Enlightenment, learning HTML with C++ and thinking how I can put these two together.
+My first contact with Linux shell came about the year 2000. Back then, I was what people now call a script kiddie - subscribing Bugtraq, installing Red Hat on Friday nights, tweaking Enlightenment, learning HTML with C++ and thinking how I can put these two together.
   
 I’ve got introduced to CLI in high school and since then I feel paranoid when I’m not able to access shell on my laptop or workstation.
 
@@ -31,7 +33,7 @@ Here are some CLI tools that make working with shell less hell.
 
 It’s very friendly for users who just started working with CLI. See what happens when I put `git` and just press `[TAB]` a couple of times:
 
-[IMAGE]
+![Animated Fish gif]({static}/images/fishell.gif "Fish shell gif")
 
 **Note:** with fish things might get a bit out of hand when you want to set up your programming environment. I had to google things and work it out when it came to managing the `PATH` variable on some occasions ([here’s a post that saved my life when it came to setting up programming version managers in fish](https://angristan.xyz/2018/07/how-to-use-nvm-rbenv-pyenv-goenv-with-fish-shell/)
 
@@ -53,7 +55,7 @@ With this app, swearing gives you twice the relief 😉
 
 ### howdoi
 
-I use this one less, but it’s sometimes very helpful on CLI-only systems where you can’t use a GUI web browser (remember that there are text-mode web browsers like [Lynx](https://lynx.browser.org/) that  work perfectly fine 👌🏻). [Howdoi](https://github.com/gleitz/howdoi) provides short programming-related snippets when you’re lost or you’re just looking for a quick answer on how to do something.
+I use this one less, but it’s sometimes very helpful on CLI-only systems where you can’t use a GUI web browser (remember that there are text-mode web browsers like [Lynx](https://lynx.browser.org/) that  work perfectly fine 👌🏻). [Howdoi](https://github.com/gleitz/howdoi) provides short programming-related snippets when you’re lost or you’re just looking for a quick hack.
 
 ### fkill
 
