@@ -1,3 +1,12 @@
+Title: How to open source any code inside your company and what to remember about when doing so.
+Date: 2021-12-08 13:33
+Tags: open-source, open source, guide
+Slug: how-to-open-source-code-guide
+Authors: Wojtek Cichon
+Summary: Here's a short breakdown of the things you have to remember about when open-sourcing code in a proffessional env.
+
+![Open source meme]({static}/images/one-does-open-source.jpg "One does not simply open source code meme")
+
 # How to open source any code inside your company and what to remember about when doing so.
 
 Being in various job recruitments related to Open Source Software and having some experience in the field I’ve bumped into the following question:
