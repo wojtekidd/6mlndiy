@@ -5,35 +5,35 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://wojtekidd.org/6mlndiy/</loc>
-<lastmod>2021-03-01T11:33:53-00:00</lastmod>
+<lastmod>2021-12-08T12:58:52-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://wojtekidd.org/6mlndiy/tags.html</loc>
-<lastmod>2021-03-01T11:33:53-00:00</lastmod>
+<lastmod>2021-12-08T12:58:52-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://wojtekidd.org/6mlndiy/categories.html</loc>
-<lastmod>2021-03-01T11:33:53-00:00</lastmod>
+<lastmod>2021-12-08T12:58:52-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://wojtekidd.org/6mlndiy/authors.html</loc>
-<lastmod>2021-03-01T11:33:53-00:00</lastmod>
+<lastmod>2021-12-08T12:58:52-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://wojtekidd.org/6mlndiy/archives.html</loc>
-<lastmod>2021-03-01T11:33:53-00:00</lastmod>
+<lastmod>2021-12-08T12:58:52-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -43,6 +43,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <lastmod>2020-10-14T13:35:10+02:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.75</priority>
+</url>
+
+<url>
+<loc>https://wojtekidd.org/6mlndiy/how-to-open-source-code-guide.html</loc>
+<lastmod>2021-12-08T13:33:00+01:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.99</priority>
 </url>
 
 <url>
@@ -61,7 +68,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://wojtekidd.org/6mlndiy/category/blog.html</loc>
-<lastmod>2020-03-03T22:59:00+01:24</lastmod>
+<lastmod>2021-12-08T13:33:00+01:24</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://wojtekidd.org/6mlndiy/tag/open-source.html</loc>
+<lastmod>2021-12-08T13:33:00+01:24</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://wojtekidd.org/6mlndiy/tag/guide.html</loc>
+<lastmod>2021-12-08T13:33:00+01:24</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -110,7 +131,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://wojtekidd.org/6mlndiy/author/wojtek-cichon.html</loc>
-<lastmod>2020-03-03T22:59:00+01:24</lastmod>
+<lastmod>2021-12-08T13:33:00+01:24</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Six Million Ways to DIY</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8" />
+        <!-- twitter card metadata -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s.gravatar.com/avatar/f3365ae331876cd8553167f3354d06ba?s=256">
+<meta name="twitter:site" content="@wojtekidd">
+<meta name="twitter:title" content="How to open source any code inside your company and what to remember about when doing so.">
+<meta name="twitter:description" content="">
+        <!-- OG Tags -->
+<meta property="og:url" content="https://wojtekidd.org/6mlndiy/how-to-open-source-code-guide.html"/>
+<meta property="og:title" content="Six Million Ways to DIY | How to open source any code inside your company and what to remember about when doing so." />
+<meta property="og:description" content="" />
+        <!-- favicon -->
+        <!-- moment.js for date formatting -->
+        <script src="https://wojtekidd.org/6mlndiy/theme/js/moment.js"></script>
+        <!-- css -->
+        <link rel="stylesheet" type="text/css" href="https://wojtekidd.org/6mlndiy/theme/css/main.css" />
+		<script>
+			
+                /*! grunt-grunticon Stylesheet Loader - v2.1.2 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
+    
+    (function(e){function t(t,n,r,o){"use strict";function a(){for(var e,n=0;u.length>n;n++)u[n].href&&u[n].href.indexOf(t)>-1&&(e=!0);e?i.media=r||"all":setTimeout(a)}var i=e.document.createElement("link"),l=n||e.document.getElementsByTagName("script")[0],u=e.document.styleSheets;return i.rel="stylesheet",i.href=t,i.media="only x",i.onload=o||null,l.parentNode.insertBefore(i,l),a(),i}var n=function(r,o){"use strict";if(r&&3===r.length){var a=e.navigator,i=e.Image,l=!(!document.createElementNS||!document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||e.opera&&-1===a.userAgent.indexOf("Chrome")||-1!==a.userAgent.indexOf("Series40")),u=new i;u.onerror=function(){n.method="png",n.href=r[2],t(r[2])},u.onload=function(){var e=1===u.width&&1===u.height,a=r[e&&l?0:e?1:2];n.method=e&&l?"svg":e?"datapng":"png",n.href=a,t(a,null,null,o)},u.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",document.documentElement.className+=" grunticon"}};n.loadCSS=t,e.grunticon=n})(this);(function(e,t){"use strict";var n=t.document,r="grunticon:",o=function(e){if(n.attachEvent?"complete"===n.readyState:"loading"!==n.readyState)e();else{var t=!1;n.addEventListener("readystatechange",function(){t||(t=!0,e())},!1)}},a=function(e){return t.document.querySelector('link[href$="'+e+'"]')},c=function(e){var t,n,o,a,c,i,u={};if(t=e.sheet,!t)return u;n=t.cssRules?t.cssRules:t.rules;for(var l=0;n.length>l;l++)o=n[l].cssText,a=r+n[l].selectorText,c=o.split(");")[0].match(/US\-ASCII\,([^"']+)/),c&&c[1]&&(i=decodeURIComponent(c[1]),u[a]=i);return u},i=function(e){var t,o,a;o="data-grunticon-embed";for(var c in e)if(a=c.slice(r.length),t=n.querySelectorAll(a+"["+o+"]"),t.length)for(var i=0;t.length>i;i++)t[i].innerHTML=e[c],t[i].style.backgroundImage="none",t[i].removeAttribute(o);return t},u=function(t){"svg"===e.method&&o(function(){i(c(a(e.href))),"function"==typeof t&&t()})};e.embedIcons=i,e.getCSS=a,e.getIcons=c,e.ready=o,e.svgLoadedCallback=u,e.embedSVG=u})(grunticon,this);
+                
+                grunticon(["https://wojtekidd.org/6mlndiy/theme/css/icons.data.svg.css", "https://wojtekidd.org/6mlndiy/theme/css/icons.data.png.css", "https://wojtekidd.org/6mlndiy/theme/css/icons.fallback.css"]);
+            </script>
+        <noscript><link href="https://wojtekidd.org/6mlndiy/theme/css/icons.fallback.css" rel="stylesheet"></noscript>
+        <!-- menu toggle javascript -->
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", initMenu);
+            
+            function initMenu(){
+                var menu = document.getElementById("menu");
+                var menulink = document.getElementById("menu-link");
+                menulink.addEventListener("click", function toggleMenu(){
+                        window.event.preventDefault();
+                        menulink.classList.toggle('active');
+                        menu.classList.toggle('active');              
+                    });
+            };
+        </script>
+
+
+    <meta name="tags" content="open-source" />
+    <meta name="tags" content="open source" />
+    <meta name="tags" content="guide" />
+
+</head>
+<body>
+    <div role="banner" id="masthead">
+        <header>
+            <a href="https://wojtekidd.org/6mlndiy"><img src="https://s.gravatar.com/avatar/f3365ae331876cd8553167f3354d06ba?s=256" alt="Wojtek" class="gravatar"></a>
+            <a href="#menu" id="menu-link">Menu</a>
+            <nav id="menu">
+                <ul>
+                        <li><a href="https://wojtekidd.org/6mlndiy/pages/about.html">about</a></li>
+                            <li class="active"><a href="https://wojtekidd.org/6mlndiy/category/blog.html">blog</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+        <div class="page" role="main">
+            <div><h1>Six Million Ways to DIY - thoughts on software, DIY culture, anything really</h1></div>
+            <br>
+  <div class="article" role="article">
+    <article>
+        <footer>
+            <a name="top"></a>
+            <p>
+              <time datetime=" 2021-12-08 13:33:00+01:00">
+                <script>document.write(moment('2021-12-08 13:33:00+01:00').format('LL'));</script>
+              </time>
+            </p>
+        </footer>
+        <header>
+          <h2>
+            How to open source any code inside your company and what to remember about when doing so.
+          </h2>
+        </header>
+      <div class="content">
+         <p><img alt="Open source meme" src="https://wojtekidd.org/6mlndiy/images/one-does-open-source.jpg" title="One does not simply open source code meme"></p>
+<h1>How to open source any code inside your company and what to remember about when doing so.</h1>
+<p>Being in various job recruitments related to Open Source Software and having some experience in the field I’ve bumped into the following question:</p>
+<blockquote>
+<p>“How would you open source a piece of software and what benefits would it give to your company?”</p>
+</blockquote>
+<p>This caught me off guard as I was always sure that open source is the way to go and kind of treated this way of distributing software as there were no other options (probably because I landed my first tech job at an OSS company). When trying to answer this question I couldn’t come up with a precise and elaborate answer. Only now, after open-sourcing a feature phone operating system from scratch, I can tell exactly how such a process might look like.</p>
+<h2>Why should we open-source my codebase?</h2>
+<p>To state the obvious - Open Source has won, etc. But let’s put it in a business perspective:</p>
+<ol>
+<li>
+<p>Sustainability and longevity - even if your company suddenly switches to doing something completely different, goes low on manpower when it comes to sustaining its open-source code, or completely disappears from the face of the planet, there is still value in your code that can be sustained by a vibrant open source community.  </p>
+</li>
+<li>
+<p>Transparency - if transparency is one of the core values inside your company or product community then open sourcing software is a living (giting?) proof that you’re serious about your values and give back to the community.</p>
+</li>
+<li>
+<p>Security and quality - more eyes on the code, more bugs squashed, more discussions about how to do things properly and securely.  </p>
+</li>
+<li>
+<p>Interoperability - there are always people who see that your piece of code could be used in a different context or be combined with other solutions to bring more value to more people. This aspect builds on collaboration and transparency as well.</p>
+</li>
+</ol>
+<p>I’m leaving out the case of open source business models here since the topic is big and complex, but just remember that there are dozens of companies that earn gazillions and have their code completely open or distributed in<a href="https://www.wikiwand.com/en/Open-core_model">an open core model</a>.</p>
+<h2>Where should I start? (AKA I have the code, now what?)</h2>
+<h3>Get the organization’s buy-in first</h3>
+<p>Let’s assume that you’re a newcomer to a company and your mission is to open source a piece of code that the development team has been working on for the past X years. You have to start building trust with both engineering and business units so that everyone is on the same page, knows what you’re trying to achieve and why it’s crucial to your business.</p>
+<p>Create a simple presentation introducing every group to the idea of Open Source and your particular case enumerating the business profits of going OSS. Be ready to address the fears of specific groups. Developers mostly fear that someone from the other side of the planet might find their code too spaghetti or spark up discussions around certain decisions that are reflected inside the code.</p>
+<p>The business units might be afraid that going open source means the end of business and profits as they know it (“Giving OUR code away? For FREE?”)</p>
+<p>What I did is I used<a href="https://www.youtube.com/watch?v=a8fHgx9mE5U">this pretty good short animation to explain why open source is good</a> (AND NAPSTER BAAAAAD XD) inside a Google sheet presentation explaining:</p>
+<ul>
+<li>What is Open Source</li>
+<li>Why it has been invented</li>
+<li>Why it’s good for our company</li>
+<li>What are the next steps (for engineering and business teams alike)</li>
+</ul>
+<p>Holding these meetings separately inside specific teams and talking about the open-source movement will also help you out in identifying your first “go-to” people regarding writing documentation, making decisions, contacting the community, etc.</p>
+<p>The other way round is going to your Git platform admin and saying “Hi I’m Wojtek and I will open-source all your repos! Gimmie access!”</p>
+<h2>Decide on an open-source license</h2>
+<p>Ask yourself these questions:</p>
+<ul>
+<li>What are the business purposes of open source code in my company (if any)?</li>
+<li>What are the business risks of open source code in my company (if any)?</li>
+</ul>
+<p>Then read about the differences between licenses - my place to go is most often this<a href="https://choosealicense.com/">“Choose an open-source license” page by GitHub</a>. Easy to navigate and straightforward although…</p>
+<h2>Beware of the third-party software licenses trap</h2>
+<p>Not really a trap tough - just wanted to add some exciting plot twist inside the article.</p>
+<p>Basically, it’s about what kind of licensed software you already have inside the piece of the codebase you’re trying to open up for contributions.</p>
+<p>You can have all of these: permissive, less-permissive, proprietary, etc. It can get complicated but in most cases, you have to make sure that:</p>
+<ol>
+<li>
+<p>The license you choose doesn’t null other less-permissive licenses that your code includes (especially watch out for GPL which GPLs everything it touches)</p>
+</li>
+<li>
+<p>You have paid a license fee for any open source code that is inside your codebase (so that your codebase can be used for commercial purposes)  </p>
+</li>
+<li>
+<p>Any proprietary assets and pieces of code are hidden to the eyes of the open-source community and are available only to the eyes of your company as the sole owner of the aforementioned. This part might mean that you’ll have to store assets in closed repos and link to them (suck them in) only when building your software for commercial purposes (make sure that you start doing so from the beginning, otherwise the links to proprietary pieces of digital assets stay in your Git history).<a href="https://pixelambacht.nl/2017/github-font-piracy/">Remember to check your fonts licenses as well.</a></p>
+</li>
+</ol>
+<p>This part can get complicated so don’t hesitate to reach out to people who own these codebases to make sure that you’re not infringing any licenses. After you get these details settled make sure that you describe everything inside your `LICENSE.md` file which is the default place to store your license info.</p>
+<h2>Start with the documentation</h2>
+<h3>The structure of technical documentation</h3>
+<p>I’ll be brief here because it’s also a topic for separate discussions and articles. I usually stick to<a href="https://documentation.divio.com/structure/">this structure for docs</a> which was an eye-opener when I first read it. Make sure that you write the README.md in such a way that a person who isn’t technical and bumps into your repository by accident can say what this piece of code does and where they can start setting it up locally and exploring it further.</p>
+<h3>A how-to contribute article</h3>
+<p>Be precise on how to start contributing to your code, explain the development workflow and localization workflow. Make sure that your repository is set up in such a way that people outside of your organization can contribute Pull Requests from forks, have the access rights to read the outcomes (logs, errors) of your CI pipeline, and can’t merge to the main branch without a proper code review from the maintainers of the code.</p>
+<h3>Code of conduct and inclusiveness</h3>
+<p>Nowadays a Code of Conduct is a must-have so don’t forget about one. I recommend appropriating the<a href="https://contributor-covenant.org/">CONTRIBUTOR COVENANT</a> and tweaking it to your needs.</p>
+<p><a href="https://todogroup.org/guides/diversity-inclusion/">Remember to be inclusive</a> - wording matters.</p>
+<h2>Good first issues and issue templates</h2>
+<p>Good first issues are the issues you can tag on the issue board to signal what are the low-hanging fruits. These might be pieces of documentation, entry-level code fixes, or test fixes that can be done by anyone with some proficiency in the programming language your codebase is written in.</p>
+<p>You can also set up some issue (and pull request) templates for your community so that whenever a new person addresses the issue you take them by the hand and help them describe it whether it’s a bug / feature request / new localization / anything else. There is<a href="https://www.talater.com/open-source-templates/">a fun way to generate issue and PR templates</a> as well.</p>
+<h2>Contributor License Agreement</h2>
+<p>Oh no, another license! Or an agreement? Or whatever this is…  </p>
+<p>CLA is an important piece of the puzzle if you’re open-sourcing code that your company uses for commercial purposes (so I guess in most cases). This is an agreement between your contributors and your company as the code maintainer that all intellectual rights of future contributions will be ‘owned’ by the maintainer. This is a legal backup that you need to have just to make sure that when your company earns its first mill, it won’t be sued in court by someone who added a tiny functionality to the code.</p>
+<p>Signing the CLA can be automated and I highly recommend you set up this process with the help of<a href="https://cla-assistant.io/">this CLA assistant</a>. You can also find some ready-made CLA texts out there just waiting for you to be (responsibly) copied and pasted.</p>
+<h2>Get it out there!</h2>
+<p>Once you feel that your code is ready to welcome your first contributors go spread the word! Use your in-house marketing team to help you and make sure that you also share the news in all relevant tech outlets. Too many to name here.</p>
+<p>If you’re hesitant to open the codebase for the entire world at one go, you can start with a “Developer preview” - a process where you screen all the people that want to contribute to your code by letting a small amount of them onto the repository and seeing how they react. Stay in touch with your first contributors and make sure that you attend to their needs and suggestions. Give out your product or company swag to your first contributors and make them feel welcome at the earliest stages - even if it’s a developer preview.</p>
+<h2>Refine and repeat</h2>
+<p>Once you get your first codebase running on open source, you can simply repeat the process with other repos and flood the world with even more open-source code.</p>
+<hr>
+<p>I hope that someone searching for “How and why should I open source my codebase” will find this article helpful and land their next job at helpful enough that they will use it to land a job at (insert your dream company name here) or make a clear step-by-step plan of what has to be done on their current job involving open source.</p>
+      </div>
+      <div class="back-to-top">
+          <a href="#top">back to top</a>
+      </div>
+    </article>
+  </div>
+<!-- end article -->
+                <footer>
+                    <div class="icons">
+                        <a href="https://twitter.com/wojtekidd" target="_blank"><div class="icon-twitter icon"></div></a>
+                        <a href="https://github.com/wojtekidd" target="_blank"><div class="icon-github icon"></div></a>
+                        <a href="https://www.goodreads.com/user/show/950927-wojtek" target="_blank"><div class="icon-goodreads icon"></div></a>
+                    </div>
+                    <p>© <script>document.write(moment().format('YYYY'));</script> Wojtek Cichon</p>
+ 
+                    <p><i>"Brutal"</i> Pelican Theme</p>
+                    <p>Designed and built by <a href="http://twitter.com/mcman_s">@mcman_s</a> in Denver</p>
+                </footer>
+        </div>
+</body>
+</html>
