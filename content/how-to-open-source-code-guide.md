@@ -9,7 +9,7 @@ Summary: Here's a short breakdown of the things you have to remember about when 
 
 Being in various job recruitments related to Open Source Software and having some experience in the field I’ve bumped into the following question:
 
->“How would you open source a piece of software and what benefits would it give to your company?”
+*“How would you open source a piece of software and what benefits would it give to your company?”*
 
 This caught me off guard as I was always sure that open source is the way to go and kind of treated this way of distributing software as there were no other options (probably because I landed my first tech job at an OSS company). When trying to answer this question I couldn’t come up with a precise and elaborate answer. Only now, after open-sourcing a feature phone operating system from scratch, I can tell exactly how such a process might look like.
 
@@ -35,7 +35,7 @@ Let’s assume that you’re a newcomer to a company and your mission is to open
 
 Create a simple presentation introducing every group to the idea of Open Source and your particular case enumerating the business profits of going OSS. Be ready to address the fears of specific groups. Developers mostly fear that someone from the other side of the planet might find their code too spaghetti or spark up discussions around certain decisions that are reflected inside the code.
 
-The business units might be afraid that going open source means the end of business and profits as they know it (“Giving *OUR* code away? For *FREE*?”)
+The business units might be afraid that going open source means the end of business and profits as they know it (“Giving **OUR** code away? For **FREE**?”)
 
 What I did is I used [this pretty good short animation to explain why open source is good](https://www.youtube.com/watch?v=a8fHgx9mE5U) inside a Google sheet presentation explaining:
 
@@ -46,7 +46,7 @@ What I did is I used [this pretty good short animation to explain why open sourc
 
 Holding these meetings separately inside specific teams and talking about the open-source movement will also help you out in identifying your first “go-to” people regarding writing documentation, making decisions, contacting the community, etc.
 
-The other way round is going to your Git platform admin and saying *“Hi I’m Wojtek and I will open-source all your repos! Gimmie access!”*
+The other way round is going to your Git platform admin and saying “Hi I’m Wojtek and I will open-source all your repos! Gimmie access!”
 
 ## Decide on an open-source license
 
